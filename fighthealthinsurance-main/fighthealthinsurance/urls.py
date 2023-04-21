@@ -22,7 +22,11 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('scan', views.ScanView.as_view(), name="scan"),
     path('server_side_ocr', views.OCRView.as_view(), name="server_side_ocr"),
+    
     path('', views.IndexView.as_view(), name="root"),
+    path('about-us', views.AboutView.as_view(), name="about"),
+    path('other-resources', views.OtherResourcesView.as_view(), name="other-resources"),
+
     path('process', views.ProcessView.as_view(), name="process"),
     path('privacy_policy', views.PrivacyPolicyView.as_view(), name="privacy_policy"),
     path('opt_out', views.OptOutView.as_view(), name="opt_out"),

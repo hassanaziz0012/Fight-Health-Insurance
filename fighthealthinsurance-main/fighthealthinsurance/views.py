@@ -26,6 +26,16 @@ class IndexView(View):
         return render(
             request,
             'index.html')
+    
+
+class AboutView(View):
+    def get(self, request):
+        return render(request, 'about_us.html')
+    
+
+class OtherResourcesView(View):
+    def get(self, request):
+        return render(request, 'other_resources.html')
 
 
 class ScanView(View):
