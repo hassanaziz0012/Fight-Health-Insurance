@@ -88,6 +88,10 @@ class RemoveDataView(View):
             context={
                 'title': "Remove My Data",
             })
+    
+    def post(self, request):
+        email = request.POST.get('email')
+        # ... handle further logic here.
 
 
 class RecommendAppeal(View):
