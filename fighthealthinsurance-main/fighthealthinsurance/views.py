@@ -80,6 +80,17 @@ class OptOutView(View):
             })
 
 
+class ShareDenialView(View):
+    def get(self, request):
+        return render(
+            request,
+            'share_denial.html',
+            context={
+                'title': 'Share Denial'
+            }
+        )
+
+
 class RemoveDataView(View):
     def get(self, request):
         return render(
